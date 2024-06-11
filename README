@@ -7,11 +7,11 @@ se sabe que el 85% de su código es paralelizable.
 1. Calcula el tiempo de ejecución paralelo Tp(n), el speedup S(n) y la eficiencia E(n)
 cuando se ejecuta n=1,3,6,9,12 procesadores.
 
-Tiempo de ejecucion:	120
+Tiempo de ejecucion:		120
 Porcentaje Paralelizable	85
 Porcentaje Paralelizable	85%
 
-Formular para calcular los calculos utilizadas:
+Formulas utilizadas para realizar los calculos:
 
 Tp(n) = T(1) × [(1 - F) + (F / n)]
 S(n) = T(1) / T(n)
