@@ -15,13 +15,13 @@ public class Main {
 
         generarArchivo();
 
-        long tiempoInicio = System.currentTimeMillis();
+        double tiempoInicio = System.currentTimeMillis();
         long sumaSecuencial = sumaSecuencial(new File(FILENAME));
-        long tiempoFinal = System.currentTimeMillis();
+        double tiempoFinal = System.currentTimeMillis();
         System.out.println("---------------------------------------------");
         System.out.println("La suma de los elementos del arreglo secuencial es: " + sumaSecuencial);
 
-        System.out.println("Tiempo de ejecución de la suma Secuencial: " + (tiempoFinal - tiempoInicio) + "ms");
+        System.out.println("Tiempo de ejecución de la suma Secuencial: " + ((tiempoFinal - tiempoInicio))/1000 + "s");
         System.out.println("---------------------------------------------");
 
         tiempoInicio = System.currentTimeMillis();
@@ -30,7 +30,7 @@ public class Main {
 
         System.out.println("La suma de los elementos del arreglo paralelo con (2) hiilos es: " + sumaParalelo);
 
-        System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
+        System.out.println("Tiempo de ejecución de la suma Paralela: " + ((tiempoFinal - tiempoInicio))/1000 + "s");
         System.out.println("---------------------------------------------");
 
         HILOS_PROCESOS = 4;
@@ -40,7 +40,7 @@ public class Main {
 
         System.out.println("La suma de los elementos del arreglo paralelo con (4) hiilos es: " + sumaParalelo);
 
-        System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
+        System.out.println("Tiempo de ejecución de la suma Paralela: " + ((tiempoFinal - tiempoInicio))/1000 + "s");
         System.out.println("---------------------------------------------");
 
         HILOS_PROCESOS = 8;
@@ -50,7 +50,7 @@ public class Main {
 
         System.out.println("La suma de los elementos del arreglo paralelo con (8) hiilos es: " + sumaParalelo);
 
-        System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
+        System.out.println("Tiempo de ejecución de la suma Paralela: " + ((tiempoFinal - tiempoInicio))/1000 + "s");
         System.out.println("---------------------------------------------");
 
     }
