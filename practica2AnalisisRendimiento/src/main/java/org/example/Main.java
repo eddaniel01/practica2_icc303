@@ -28,7 +28,7 @@ public class Main {
         long sumaParalelo = sumaParalela(new File(FILENAME),HILOS_PROCESOS);
         tiempoFinal = System.currentTimeMillis();
 
-        System.out.println("La suma de los elementos del arreglo paralelo con (2) hiilos es: " + sumaParalelo);
+        System.out.println("La suma de los elementos del arreglo paralelo con (2) hilos es: " + sumaParalelo);
 
         System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
         System.out.println("---------------------------------------------");
@@ -38,7 +38,7 @@ public class Main {
         sumaParalelo = sumaParalela(new File(FILENAME),HILOS_PROCESOS);
         tiempoFinal = System.currentTimeMillis();
 
-        System.out.println("La suma de los elementos del arreglo paralelo con (4) hiilos es: " + sumaParalelo);
+        System.out.println("La suma de los elementos del arreglo paralelo con (4) hilos es: " + sumaParalelo);
 
         System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
         System.out.println("---------------------------------------------");
@@ -48,7 +48,7 @@ public class Main {
         sumaParalelo = sumaParalela(new File(FILENAME),HILOS_PROCESOS);
         tiempoFinal = System.currentTimeMillis();
 
-        System.out.println("La suma de los elementos del arreglo paralelo con (8) hiilos es: " + sumaParalelo);
+        System.out.println("La suma de los elementos del arreglo paralelo con (8) hilos es: " + sumaParalelo);
 
         System.out.println("Tiempo de ejecución de la suma Paralela: " + (tiempoFinal - tiempoInicio) + "ms");
         System.out.println("---------------------------------------------");
