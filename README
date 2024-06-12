@@ -1,3 +1,12 @@
+Objetivo de la practica:
+-Aplicar la Ley de Amdahl en contextos prácticos.
+-Desarrollar programas paralelos usando diferentes modelos de paralelización.
+-Evaluar el rendimiento de programas paralelizados y su eficiencia.
+-Analizar la escalabilidad de sistemas paralelos.
+
+Algoritmo a paralelizar: Suma de un arreglo de 1,000,000 números enteros random
+comprendido entre 1 y 10,000.
+
 Para la primera actividad o primera parte de la practica 2:
 
 Aplicar la ley de Amdanhl para el siguiente problema:
@@ -35,3 +44,81 @@ Procesadores n			Tp(n)		S(n)		E(n)
 
 
 
+
+5. Completa la siguiente tabla con los tiempos medidos:
+
+Salida del programa:
+
+Archivo generado correctamente.
+---------------------------------------------
+La suma de los elementos del arreglo secuencial es: 4995055813
+Tiempo de ejecución de la suma Secuencial: 0.078s
+---------------------------------------------
+La suma de los elementos del arreglo paralelo con (2) hiilos es: 4995055813
+Tiempo de ejecución de la suma Paralela: 0.086s
+---------------------------------------------
+La suma de los elementos del arreglo paralelo con (4) hiilos es: 4995055813
+Tiempo de ejecución de la suma Paralela: 0.057s
+---------------------------------------------
+La suma de los elementos del arreglo paralelo con (8) hiilos es: 4995055813
+Tiempo de ejecución de la suma Paralela: 0.049s
+---------------------------------------------
+
+
+Con los tiempos de ejecución de la salida, podemos calcular el aumento de la velocidad (S) y la fracción paralelizable (f) utilizando la fórmula de Amdahl.
+
+Caso 1: 2 hilos
+
+Tiempo de ejecución secuencial: 0.078s
+Tiempo de ejecución paralelo: 0.086s
+
+S = T_secuencial / T_paralelo = 0.078 / 0.086 = 0.91
+
+f = 1 - 1 / (0.91 * 2 + 1) = 0.45
+
+Porcentaje de paralelización: 45%
+
+Caso 2: 4 hilos
+
+Tiempo de ejecución secuencial: 0.078s
+Tiempo de ejecución paralelo: 0.057s
+
+S = T_secuencial / T_paralelo = 0.078 / 0.057 = 1.37
+
+f = 1 - 1 / (1.37 * 4 + 1) = 0.73
+
+Porcentaje de paralelización: 73%
+
+Caso 3: 8 hilos
+
+Tiempo de ejecución secuencial: 0.078s
+Tiempo de ejecución paralelo: 0.049s
+
+S = T_secuencial / T_paralelo = 0.078 / 0.049 = 1.59
+
+f = 1 - 1 / (1.59 * 8 + 1) = 0.84
+
+Porcentaje de paralelización: 84%
+
+
+Procesadores n			Tiempo de Ejecucion Secuencial (s)		Tiempo de Ejecucion Paralelo (s)		Speedup		Eficiencia
+	2				0.078s							0.086s				   0.91		   0.455					
+	4				0.078s							0.057s				   1.37		   0.73
+	8				0.078s							0.049s				   1.59		   0.84
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

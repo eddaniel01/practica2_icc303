@@ -74,6 +74,7 @@ public class Main {
         }
     }
 
+
     //Este es el metodo para realizar la suma secuencial, para cumplir con el objetivo
     //del punto 2, que dice lo siguiente:
 
