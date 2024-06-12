@@ -101,10 +101,10 @@ f = 1 - 1 / (1.59 * 8 + 1) = 0.84
 Porcentaje de paralelización: 84%
 
 
-Procesadores n			Tiempo de Ejecucion Secuencial (s)		Tiempo de Ejecucion Paralelo (s)		Speedup		Eficiencia
-	2				0.078s							0.086s				   0.91		   0.455					
-	4				0.078s							0.057s				   1.37		   0.73
-	8				0.078s							0.049s				   1.59		   0.84
+Procesadores n			Ts (s)		Tp (s)		S(n)		E(n)
+	2			0.078s		0.086s		0.91		0.455					
+	4			0.078s		0.057s		1.37		0.73
+	8			0.078s		0.049s		1.59		0.84
 	
 	
 	
